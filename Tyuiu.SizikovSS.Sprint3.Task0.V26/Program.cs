@@ -42,7 +42,7 @@ namespace Tyuiu.SizikovSS.Sprint3.Task0.V26
             Console.WriteLine("***************************************************************************");
 
             Console.WriteLine(ds.GetMultiplySeries(x, y));
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }
