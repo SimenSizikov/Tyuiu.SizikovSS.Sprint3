@@ -1,21 +1,27 @@
-﻿namespace ConsoleApp1
+﻿using System.Diagnostics.Metrics;
+
+namespace ConsoleApp1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            double s0 = 0;
-            double s1 = 0;
-            int x = 2;
-            for (int j = 1; j <= 3; j++)
+            int sumd = 0;
+            int x;
+            for (x = 5; x <= 10; x++)
             {
-                for (int k = 1; k <= 3; k++)
+                for (int d = 1; d <= x; d++)
                 {
-                    s0 = k * x - 3;
-                    s1 += s0;
+                    if (x % d == 0)
+                    {
+                        if (d > 5)
+                        {
+                            sumd = sumd + d;
+                        }
+                    }      
                 }
             }
-            Console.WriteLine(Math.Round(s1, 3));
+            Console.WriteLine(sumd);
         }
     }
 }
