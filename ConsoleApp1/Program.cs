@@ -4,19 +4,20 @@
     {
         static void Main(string[] args)
         {
-            int a = 2;
-            int b = 4;
-            int c = 3;
-            int d = 5;
-            
-            for (int i = 1; i < 5; i++)
-            {
-                c++;
-                c += b;
-                a = b+c;
-                d = (a-b) + i;
+            int a = 4;
+            int b = 6;
+            int c = 7;
+            int d = 8;
+            int i = 1;
+            while (i<4)
+            { 
+                b--;
+                b += a;
+                c = b - a;
+                d = (c + a) - i;
+                i++;
             }
-                Console.WriteLine(d);
-            }
+        Console.WriteLine(d);
+        }
     }
 }
