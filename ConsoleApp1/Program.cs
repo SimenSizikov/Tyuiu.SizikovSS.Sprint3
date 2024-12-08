@@ -4,20 +4,15 @@
     {
         static void Main(string[] args)
         {
-            int a = 6;
-            int b = 4;
-            int c = 8;
-            int d = 7;
-            int i = 1;
-            do
+            string str = "cdfgcc cfgc ctf";
+            foreach (char c in str)
             {
-                b++;
-                a -= b;
-                c += a;
-                d = (c - a) + i;
-                i++;
-            } while (i < 4);
-        Console.WriteLine(d);
+                if (c == 'c')
+                {
+                    str = str.Replace(c, 'w');
+                }
+            }
+            Console.WriteLine(str);
         }
     }
 }
