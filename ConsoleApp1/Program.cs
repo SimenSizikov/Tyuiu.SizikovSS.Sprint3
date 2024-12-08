@@ -4,15 +4,19 @@
     {
         static void Main(string[] args)
         {
-            string str = "cdfgcc cfgc ctf";
-            foreach (char c in str)
+            int x;
+            double sp = 1;
+            int i = 0;
+            for (x = -2; x <= 2; x++)
             {
-                if (c == 'c')
-                {
-                    str = str.Replace(c, 'w');
+                if (x == 0)
+                {   
+                    break;
                 }
+                sp = sp * (3*x+1);
+                i++;
             }
-            Console.WriteLine(str);
+            Console.WriteLine(sp);
         }
     }
 }
