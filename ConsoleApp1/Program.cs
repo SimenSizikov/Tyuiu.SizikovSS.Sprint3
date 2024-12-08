@@ -4,19 +4,19 @@
     {
         static void Main(string[] args)
         {
-            int a = 4;
-            int b = 6;
-            int c = 7;
-            int d = 8;
+            int a = 6;
+            int b = 4;
+            int c = 8;
+            int d = 7;
             int i = 1;
-            while (i<4)
-            { 
-                b--;
-                b += a;
-                c = b - a;
-                d = (c + a) - i;
+            do
+            {
+                b++;
+                a -= b;
+                c += a;
+                d = (c - a) + i;
                 i++;
-            }
+            } while (i < 4);
         Console.WriteLine(d);
         }
     }
