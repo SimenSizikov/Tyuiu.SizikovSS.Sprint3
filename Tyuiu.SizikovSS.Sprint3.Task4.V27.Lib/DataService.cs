@@ -12,7 +12,7 @@ namespace Tyuiu.SizikovSS.Sprint3.Task4.V27.Lib
                 if (x == 0) continue;
                 else y += x / (Math.Cos(x) + Math.Sin(x));
             }
-            return Math.Round(y,3);
+            return Math.Round(y);
         }
     }
 }
