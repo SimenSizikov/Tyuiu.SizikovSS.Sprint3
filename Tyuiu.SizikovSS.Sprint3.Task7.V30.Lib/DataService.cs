@@ -7,9 +7,9 @@ namespace Tyuiu.SizikovSS.Sprint3.Task7.V30.Lib
         public double[] GetMassFunction(int startValue, int stopValue)
         {
             int count = 0;
-            for (int x = startValue; x <= stopValue; x++) count++;
+            for (int x = startValue; x <= stopValue; x++) count++;// 11
 
-            double[] mass = new double[count];
+            double[] mass = new double[count];// массив на 11 ячеек
             int k = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
@@ -18,7 +18,8 @@ namespace Tyuiu.SizikovSS.Sprint3.Task7.V30.Lib
                     mass[k] = 0;
                     continue;
                 }
-                mass[k] = Math.Round(( (5*x+2.5)/(Math.Sin(x) + 2) + 2*x + 2 ),3);
+                mass[k] = Math.Round(((5 * x + 2.5) / (Math.Sin(x) + 2) + 2 * x + 2), 2);
+                k++;
             }
             return mass;
         }
